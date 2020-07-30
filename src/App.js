@@ -10,6 +10,16 @@ import { NoMatch } from './NoMatch'
 import { Layout } from './components/Layout'
 import {NavigationBar} from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';
+import { FirstPage } from './FirstPage'
+import { SecondPage } from './SecondPage'
+import { ThirdPage } from './ThirdPage'
+import { FourthPage } from './FourthPage'
+import { FifthPage } from './FifthPage'
+import { SixthPage } from './SixthPage'
+import { SeventhPage } from './SeventhPage'
+import { EighthPage } from './EighthPage'
+import { NinthPage } from './NinthPage'
+
 class App extends Component {
   render() {
     return (
@@ -25,6 +35,15 @@ class App extends Component {
             <Route path="/curriculum-designs" component={CurriculumDesigns} />
             <Route path="/other-ideas" component={OtherIdeas} />
             <Route path="/contact" component={Contact} />
+            <Route path="/firstPage" component={FirstPage} />
+            <Route path="/secondPage" component={SecondPage} />
+            <Route path="/thirdPage" component={ThirdPage} />
+            <Route path="/fourthPage" component={FourthPage} />
+            <Route path="/fifthPage" component={FifthPage} />
+            <Route path="/sixthPage" component={SixthPage} />
+            <Route path="/seventhPage" component={SeventhPage} />
+            <Route path="/eigthPage" component={EighthPage} />
+            <Route path="/ninthPage" component={NinthPage} />
             <Route component={NoMatch} />
           </Switch>
          </Router>
