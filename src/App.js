@@ -7,9 +7,7 @@ import { CurriculumDesigns } from './CurriculumDesigns'
 import { OtherIdeas } from './OtherIdeas'
 import { Contact } from './Contact'
 import { NoMatch } from './NoMatch'
-import { Layout } from './components/Layout'
 import {NavigationBar} from './components/NavigationBar';
-import { Jumbotron } from './components/Jumbotron';
 import { FirstPage } from './FirstPage'
 import { SecondPage } from './SecondPage'
 import { ThirdPage } from './ThirdPage'
@@ -25,8 +23,6 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavigationBar />
-        <Jumbotron />
-        <Layout>
          <Router>
           <Switch>
             <Route exact path="/" component={Home} />      
@@ -47,7 +43,6 @@ class App extends Component {
             <Route component={NoMatch} />
           </Switch>
          </Router>
-        </Layout>
       </React.Fragment>
     );
   }

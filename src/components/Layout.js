@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import GridList from '@material-ui/core/GridList';
 
 //renders things straight in the middle of the page
 export const Layout = (props) => (
-<Container>
+<GridList>
     {props.children}
-</Container>
+</GridList>
 )
