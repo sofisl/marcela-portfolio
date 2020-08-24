@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { Home } from './Home'
 import { About} from './About'
-import { Illustrations } from './Illustrations'
 import { CurriculumDesigns } from './CurriculumDesigns'
 import { OtherIdeas } from './OtherIdeas'
 import { Contact } from './Contact'
 import { NoMatch } from './NoMatch'
 import {NavigationBar} from './components/NavigationBar';
-import { FirstPage } from './FirstPage'
-import { SecondPage } from './SecondPage'
-import { ThirdPage } from './ThirdPage'
-import { FourthPage } from './FourthPage'
-import { FifthPage } from './FifthPage'
-import { SixthPage } from './SixthPage'
-import { SeventhPage } from './SeventhPage'
-import { EighthPage } from './EighthPage'
-import { NinthPage } from './NinthPage'
+import { Desert } from './desert.js'
+import { Forest } from './forest'
+import { Galaxy } from './galaxy'
+import { HotSprings } from './hotsprings'
+import { Lake } from './lake'
+import { MilkyWay } from './milkyway'
+import { Tornado } from './tornado'
+import { SnowyMountains } from './snowymountains'
+import { Mountains } from './mountains'
 
 class App extends Component {
   render() {
@@ -27,19 +26,18 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />      
             <Route path="/about" component={About} />
-            <Route path="/illustrations" component={Illustrations} />
             <Route path="/curriculum-designs" component={CurriculumDesigns} />
             <Route path="/other-ideas" component={OtherIdeas} />
             <Route path="/contact" component={Contact} />
-            <Route path="/firstPage" component={FirstPage} />
-            <Route path="/secondPage" component={SecondPage} />
-            <Route path="/thirdPage" component={ThirdPage} />
-            <Route path="/fourthPage" component={FourthPage} />
-            <Route path="/fifthPage" component={FifthPage} />
-            <Route path="/sixthPage" component={SixthPage} />
-            <Route path="/seventhPage" component={SeventhPage} />
-            <Route path="/eigthPage" component={EighthPage} />
-            <Route path="/ninthPage" component={NinthPage} />
+            <Route path="/desert" component={Desert} />
+            <Route path="/forest" component={Forest} />
+            <Route path="/galaxy" component={Galaxy} />
+            <Route path="/hotsprings" component={HotSprings} />
+            <Route path="/lake" component={Lake} />
+            <Route path="/milkyway" component={MilkyWay} />
+            <Route path="/tornado" component={Tornado} />
+            <Route path="/snowymountains" component={SnowyMountains} />
+            <Route path="/mountains" component={Mountains} />
             <Route component={NoMatch} />
           </Switch>
          </Router>

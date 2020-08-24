@@ -5,7 +5,7 @@ const Styles = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Raleway:ital,wght@0,500;1,500&display=swap');    
 img { 
   max-width:75%; 
-  max-height: auto; 
+  height: auto; 
   float: left;
   padding: 3rem;
 } 
@@ -30,11 +30,11 @@ p {
 
 
 const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis magna vel luctus dapibus. Proin porttitor non neque nec aliquam. Nulla vehicula quam non rhoncus lacinia. Phasellus vel mattis ipsum, eget aliquam velit."
-export const About = () => (
+export const Forest = () => (
   <Styles>
   <div>
-  <img src={require("./assets/MarcelaProfilePic.jpg")} alt="1"/>
-  <h3>ABOUT ME</h3>
+  <img src={require("./assets/forest.jpg")} alt="1"/>
+  <h3>FOREST</h3>
   <p>{text}</p>
   </div>
 </Styles>

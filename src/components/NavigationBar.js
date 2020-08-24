@@ -1,35 +1,44 @@
 import React from 'react';
-import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar} from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
-    .navbar {
-        background-color: #fcfcfc;
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Raleway:ital,wght@0,500;1,500&display=swap');    
+.navbar {
+        font-family: 'Raleway', sans-serif;
     }
 
-    .navbar-brand, .navbar-nav, .nav-link {
-        color: #bbbb;
-    
+    .navbar-nav, .nav-link {
+        font-family: 'Raleway', sans-serif;
+    }    
+    .title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 65px;
+        color: #473F3D;
+    }
+    .nav-title {
+        font-family: 'Raleway', sans-serif;
+        color:  #bbbb;
+        font-size: 40px;
+    }
 
     &:hover {
-        color: white;
+        color: #bbbb;
     }
 }
 `;
 
 export const NavigationBar = () => (
     <Styles>
-        <Navbar expand="lg">
-            <Navbar.Brand href="/">Marcela's Website</Navbar.Brand>
+        <Navbar expand="lg" >
+        <Nav.Item><Nav.Link className = "title" href="/"> MARCELA IANNINI</Nav.Link></Nav.Item>
             <Navbar.Toggle aria-controls = "basic-navbar-nav"/>
             <Navbar.Collapse id = "basic-navbar-nav">
                 <Nav className = "ml-auto">
-                    <Nav.Item><Nav.Link href="/"> Home</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/about"> About</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/otherideas"> Other Ideas</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/illustrations"> Illustrations</Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/curriculumdesigns"> Curriculum Designs </Nav.Link></Nav.Item>
-                    <Nav.Item><Nav.Link href="/contact"> Contact</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/about"> ABOUT</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/otherideas"> OTHER IDEAS</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/curriculumdesigns"> CURRICULUM DESIGNS </Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/contact"> CONTACT </Nav.Link></Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

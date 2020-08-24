@@ -20,12 +20,11 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',  
     justifyContent: 'space-around',
     overflow: 'hidden',
-    backgroundColor: theme.palette.background.paper,
   },
   gridList: {
     width: '100vw',
     height: '100vh',
-    padding: '3rem',
+    padding: '1rem',
 
   },
   icon: {
@@ -37,47 +36,56 @@ const useStyles = makeStyles((theme) => ({
  const tileData = [
    {
      img: desert,
-     title: 'Image',
+     link: 'desert',
+     title: 'DESERT',
      author: 'author',
    },
    {
     img: forest,
-    title: 'Image',
+    link: 'forest',
+    title: 'FOREST',
     author: 'author',
   },
   {
     img: snowymountains,
-    title: 'Image',
+    link: 'snowymountains',
+    title: 'SNOWY MOUNTAINS',
     author: 'author',
   },
   {
     img: mountains,
-    title: 'Image',
+    link: 'mountains',
+    title: 'MOUNTAINS',
     author: 'author',
   },
   {
     img: lake,
-    title: 'Image',
+    link: 'lake',
+    title: 'LAKE',
     author: 'author',
   },
   {
     img: galaxy,
-    title: 'Image',
+    link: 'galaxy',
+    title: 'GALAXY',
     author: 'author',
   },
   {
     img: hotsprings,
-    title: 'Image',
+    link: 'hotsprings',
+    title: 'HOT SPRINGS',
     author: 'author',
   },
   {
     img: milkyway,
-    title: 'Image',
+    link: 'milkyway',
+    title: 'MILKY WAY',
     author: 'author',
   },
   {
     img: tornado,
-    title: 'Image',
+    link: 'tornado',
+    title: 'TORNADO',
     author: 'author',
   },
  ];
@@ -89,14 +97,16 @@ export const Home = () => {
   return (
     <div className={classes.root}>
       <GridList cellHeight={180} className={classes.gridList}>
-        <GridListTile key="Subheader" cols={3} rows={3} style={{ height: 'auto' }}>
+        <GridListTile key="Subheader" cols={3} style={{ height: 'auto' }}>
         </GridListTile>
         {tileData.map((tile) => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
+            <Link to={"/"+tile.link}> 
             <GridListTileBar
               title={tile.title}
-            />
+            />    
+            </Link>
           </GridListTile>
         ))}
       </GridList>

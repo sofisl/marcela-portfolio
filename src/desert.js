@@ -30,11 +30,11 @@ p {
 
 
 const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis magna vel luctus dapibus. Proin porttitor non neque nec aliquam. Nulla vehicula quam non rhoncus lacinia. Phasellus vel mattis ipsum, eget aliquam velit."
-export const About = () => (
+export const Desert = () => (
   <Styles>
   <div>
-  <img src={require("./assets/MarcelaProfilePic.jpg")} alt="1"/>
-  <h3>ABOUT ME</h3>
+  <img src={require("./assets/desert.png")} alt="1"/>
+  <h3>DESERT</h3>
   <p>{text}</p>
   </div>
 </Styles>
