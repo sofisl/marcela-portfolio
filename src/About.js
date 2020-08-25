@@ -4,8 +4,8 @@ import styled from 'styled-components';
 const Styles = styled.div`
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Raleway:ital,wght@0,500;1,500&display=swap');    
 img { 
-  max-width:75%; 
-  max-height: auto; 
+  max-width:40%; 
+  max-height: 40%; 
   float: left;
   padding: 3rem;
 } 
