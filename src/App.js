@@ -13,7 +13,6 @@ import { Galaxy } from './galaxy'
 import { HotSprings } from './hotsprings'
 import { Lake } from './lake'
 import { MilkyWay } from './milkyway'
-import { Tornado } from './tornado'
 import { SnowyMountains } from './snowymountains'
 import { Mountains } from './mountains'
 
@@ -35,7 +34,6 @@ class App extends Component {
             <Route path="/hotsprings" component={HotSprings} />
             <Route path="/lake" component={Lake} />
             <Route path="/milkyway" component={MilkyWay} />
-            <Route path="/tornado" component={Tornado} />
             <Route path="/snowymountains" component={SnowyMountains} />
             <Route path="/mountains" component={Mountains} />
             <Route component={NoMatch} />

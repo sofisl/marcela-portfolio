@@ -13,6 +13,7 @@ import snowymountains from './assets/snowymountains.jpg';
 import mountains from './assets/mountains.jpg';
 import { Link } from 'react-router-dom';
 
+//TODO: Make squares/uneven gridlist vs. rectangles
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'grid',
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
   },
   gridList: {
-    width: '100vw',
+    width: '40vw',
     height: '100vh',
     padding: '1rem',
 
