@@ -9,7 +9,6 @@ import galaxy from './assets/galaxy.jpg';
 import hotsprings from './assets/hotsprings.jpg';
 import lake from './assets/lake.jpg';
 import milkyway from './assets/milkyway.jpg';
-import tornado from './assets/tornado.jpg';
 import snowymountains from './assets/snowymountains.jpg';
 import mountains from './assets/mountains.jpg';
 import { Link } from 'react-router-dom';
@@ -82,12 +81,6 @@ const useStyles = makeStyles((theme) => ({
     title: 'MILKY WAY',
     author: 'author',
   },
-  {
-    img: tornado,
-    link: 'tornado',
-    title: 'TORNADO',
-    author: 'author',
-  },
  ];
 
 
@@ -114,73 +107,4 @@ export const Home = () => {
   );
 }
 
-
-
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import styled from 'styled-components';
-// import GridList from '@material-ui/core/GridList';
-
-// //TODO: figure out how to expand containers to full page
-// const Styles = styled.div`
-// *{
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-// .container {
-//   display: grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   grid-template-rows: repeat(3, 1fr);
-//   grid-gap: 10px;
-//   background-color: #fcfcfc;
-//   width: 100vw;
-//   height: 100vh;
-// }
-// .cell {
-//   padding: 0.5rem;
-//   display: flex;
-//   flex-flow: row wrap;
-//   background-color: blue;  
-// }
-// img { 
-//   object-fit: cover;
-//   width: 100%;
-//   max-height: 100%;
-// } 
-// `;
-
-// export const Home = () => (
-//   <Styles>
-//   <div class="container">
-//  <Link to='/firstPage'> 
-//   <img class="cell" src={require("./assets/desert.png")} alt="1"/>
-//   </Link>
-//   <Link to='/secondPage'> 
-//   <img class="cell" src={require("./assets/forest.jpg")} alt="1" />
-//   </Link>
-//   <Link to='/thirdPage'> 
-//   <img class="cell" src={require("./assets/galaxy.jpg")} alt="1" />
-//   </Link>
-//   <Link to='/fourthPage'> 
-//   <img class="cell" src={require("./assets/hotsprings.jpg")} alt="1" />
-//   </Link>
-//   <Link to='/fifthPage'> 
-//   <img class="cell" src={require("./assets/lake.jpg")} alt="1"/>
-//   </Link>
-//   <Link to='/sixthPage'> 
-//   <img class="cell" src={require("./assets/milkyway.jpg")} alt="1"/>
-//   </Link>
-//   <Link to='/seventhPage'> 
-//   <img class="cell" src={require("./assets/tornado.jpg")} alt="1"/>
-//   </Link>
-//   <Link to='/eighthPage'> 
-//   <img class="cell" src={require("./assets/snowymountains.jpg")} alt="1"/>
-//   </Link>
-//   <Link to='/ninthPage'> 
-//   <img class="cell" src={require("./assets/mountains.jpg")} alt="1" />
-//   </Link>
-// </div>
-// </Styles>
-// )
 
